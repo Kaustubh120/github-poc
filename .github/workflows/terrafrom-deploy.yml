@@ -37,5 +37,5 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
 
-      - name: Terraform Output
+      - name: Terraform Outputs
         run: terraform output
