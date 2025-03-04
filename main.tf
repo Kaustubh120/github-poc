@@ -11,16 +11,16 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-# # Create a subnet
-# resource "aws_subnet" "my_subnet" {
-#   vpc_id                  = aws_vpc.my_vpc.id
-#   cidr_block              = var.subnet_cidr_block
-#   availability_zone       = var.availability_zone
-#   map_public_ip_on_launch = true
-#   tags = {
-#     Name = "MySubnet"
-#   }
-# }
+# Create a subnet
+resource "aws_subnet" "my_subnet" {
+  vpc_id                  = aws_vpc.my_vpc.id
+  cidr_block              = var.subnet_cidr_block
+  availability_zone       = var.availability_zone
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "MySubnet"
+  }
+}
 
 # # Create an Internet Gateway
 # resource "aws_internet_gateway" "my_igw" {
