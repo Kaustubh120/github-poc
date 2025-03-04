@@ -1,4 +1,4 @@
-ami_id          = "ami-0c55b159cbfafe1f0"
+ami_id          = "ami-05b10e08d247fb927"
 instance_type   = "t2.micro"
 region          = "us-east-1"
 vpc_cidr_block  = "10.0.0.0/16"
